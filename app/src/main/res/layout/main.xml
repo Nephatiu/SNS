@@ -1,0 +1,108 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/base"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:paddingLeft="8dp"
+		android:paddingRight="8dp"
+		android:paddingBottom="8dp"
+		android:background="#000000"
+		android:orientation="horizontal">
+		<LinearLayout
+			android:id="@+id/inner"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:paddingLeft="2dp"
+			android:paddingRight="2dp"
+			android:paddingBottom="2dp"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/header"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#424242"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/settings_btn"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="8dp"
+					android:paddingTop="8dp"
+					android:paddingRight="12dp"
+					android:paddingBottom="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="⚙"
+					android:textSize="12sp"
+					android:textColor="#FFFFFF" />
+				<de.hdodenhof.circleimageview.CircleImageView
+					android:id="@+id/sns"
+					android:layout_width="25dp"
+					android:layout_height="30dp"
+					android:paddingLeft="5dp"
+					android:background="#212121"
+					android:src="@drawable/snm_logo"
+					android:layout_gravity="center_horizontal|center_vertical"
+					app:civ_border_width="3dp"
+					app:civ_border_color="#008DCD"
+					app:civ_circle_background_color="#FFFFFF"
+					app:civ_border_overlay="true" />
+				<TextView
+					android:id="@+id/title"
+					android:layout_width="match_parent"
+					android:layout_height="30dp"
+					android:padding="8dp"
+					android:background="#212121"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="She Need Smo.re [v0.00~b0]"
+					android:textSize="14sp"
+					android:textStyle="bold"
+					android:textColor="#AED581"
+					android:layout_gravity="center_horizontal|center_vertical"
+					android:layout_weight="5" />
+				<de.hdodenhof.circleimageview.CircleImageView
+					android:id="@+id/eurodns"
+					android:layout_width="25dp"
+					android:layout_height="30dp"
+					android:paddingRight="5dp"
+					android:background="#212121"
+					android:src="@drawable/eurodns"
+					android:layout_gravity="center_horizontal|center_vertical"
+					app:civ_border_width="3dp"
+					app:civ_border_color="#008DCD"
+					app:civ_circle_background_color="#FFFFFF"
+					app:civ_border_overlay="true" />
+				<TextView
+					android:id="@+id/exit_btn"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="12dp"
+					android:paddingTop="8dp"
+					android:paddingRight="8dp"
+					android:paddingBottom="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="❌"
+					android:textSize="12sp"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<ProgressBar
+				android:id="@+id/loadBar"
+				android:layout_width="match_parent"
+				android:layout_height="5dp"
+				android:padding="4dp"
+				android:background="#FFEB3B"
+				android:indeterminate="false"
+				style="?android:progressBarStyleHorizontal" />
+			<WebView
+				android:id="@+id/accessportal"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
