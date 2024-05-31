@@ -14,9 +14,7 @@ It will ask for your default YunoHost domain and
 the URL of your preferred DNS-provider on first boot,
 which can then be changed at a later time in its settings.
 
-## *This app assumes you did NOT change your*
-## *default YunoHost adminpanel URL!*
-## *(/yunohost/admin/).*
+## *This app assumes you did NOT change your default YunoHost adminpanel URL! (/yunohost/admin/).*
 
 Occasional test-builds will be provided
 and can be used instead of compiling it yourself.
